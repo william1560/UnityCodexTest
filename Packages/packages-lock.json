@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.extio.extosc": {
+      "version": "https://github.com/Iam1337/extOSC.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": ""
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.7",
       "depth": 0,
