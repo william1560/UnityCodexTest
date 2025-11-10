@@ -56,7 +56,6 @@ namespace OscUi
         private void OnValidate()
         {
             ApplyConnectionSettings();
-
             EnsureUiReferences();
         }
 
