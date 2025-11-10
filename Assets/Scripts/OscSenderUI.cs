@@ -56,6 +56,7 @@ namespace OscUi
         private void OnValidate()
         {
             ApplyConnectionSettings();
+
             EnsureUiReferences();
         }
 
@@ -70,7 +71,6 @@ namespace OscUi
             {
                 transmitter = gameObject.AddComponent<OSCTransmitter>();
             }
-
             ApplyConnectionSettings();
         }
 
@@ -84,7 +84,6 @@ namespace OscUi
             transmitter.RemoteHost = remoteHost;
             transmitter.RemotePort = remotePort;
         }
-
         private void EnsureUiReferences()
         {
             if (messageField == null)
@@ -114,7 +113,6 @@ namespace OscUi
             sendButton.onClick.RemoveListener(SendOscMessage);
             sendButton.onClick.AddListener(SendOscMessage);
         }
-
         private void SendOscMessage()
         {
             if (transmitter == null)
